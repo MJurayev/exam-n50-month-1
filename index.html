@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="header container">
+        <a class="logo" href="#">
+            <img class="logo__img" src="./img/logo.png" alt="Logo image">
+        </a>
+
+        <ul class="nav">
+            <li class="nav__item dropdown">
+                <a href="#" class="nav__link dropdown__element">Contact Center</a>
+                <ul class="dropdown__items">
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">Business</a>
+                    </li>
+
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">Finance</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">Management</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">Advisors</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item ">
+                <a href="#" class="nav__link">Ecommerce</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#" class="nav__link">Blog</a>
+            </li>
+
+            <li class="nav__item dropdown">
+                <a href="#" class="nav__link">About us</a>
+                <ul class="dropdown__items">
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">Get help</a>
+                    </li>
+
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">Get info</a>
+                    </li>
+
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">FAQ</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <a href="#" class="nav__link">Contact us</a>
+            </li>
+        </ul>
+
+
+        <div class="lang dropdown">
+            <img class="lang__flag" src="./img/lang-img.png" alt="En">
+            <a href="#" class="lang__current">EN</a>
+            <ul class="dropdown__items lang__items">
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">RU</a>
+                </li>
+                <li class="dropdown__item">
+                    <a href="#" class="dropdown__link">UZ</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <form class="hero__info">
+                <h2 class="hero__title">Your customer experience solution</h2>
+                <p class="hero__description">For over 50 years, transcosmos has been designing solutions that prioritize
+                    the customer experience </p>
+                <label class="hero__form" action="index.php" method="get">
+                    <input class="hero__form__email" placeholder="Enter your email" type="email">
+                    <button class="hero__form__submit btn-danger" type="submit">Discover Now</button>
+                </label>
+                <p class="hero__form__hint">
+                    *By clicking the button, you are agreeing with our <span>Terms & Conditions</span>
+                </p>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
