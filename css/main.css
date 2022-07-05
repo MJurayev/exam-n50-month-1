@@ -227,7 +227,7 @@ body{
     width: 50%;
     padding-right: 42.5px;
     position: relative;
-    z-index: 999;
+    z-index: 9;
 }
 
 .hero__info::after{
@@ -288,3 +288,102 @@ body{
 }
 
 /* Solutions section styles */
+
+.solutions{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 137px;
+    padding-bottom:137px ;
+}
+
+.solutions__info{
+    padding: 30px 50px;
+    width: 50%;
+    margin-left: auto;
+}
+
+.solutions__title{
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.solutions__description{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #3D3D3D;
+
+}
+
+.counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.counter__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+}
+.counter__title{
+    width: 100%;
+     font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 0.02em;
+    background: linear-gradient(180deg, #F00000 0%, #9109F7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin: 0;
+    text-align: center;
+}
+.counter__item > span{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    background:none;
+    color: #858585;
+}
+
+.counter__item:nth-child(2){
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.solutions__btn{
+    margin-top: 20px;
+}
+
+.solutions::before,
+.solutions::after{
+    content: "";
+    height: 494.81px;
+    width: 25%;
+    
+}
+
+.solutions::before{
+    order: -2;
+    background-color: red;
+    background: url("../img/solutions-first.png") no-repeat;
+    background-size: contain;
+    margin-bottom: auto;
+}
+
+.solutions::after{
+    order: -1;
+    background-color: red;
+    background: url("../img/solutions-second.png") no-repeat;
+    background-size: contain;
+    margin-top: auto;
+}
