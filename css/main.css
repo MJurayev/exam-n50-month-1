@@ -104,23 +104,32 @@ body{
     background: #F7F7F7;
 }
 
-.btn-danger{
-    background: #D22238;
+.btn{
     border-radius: 10px;
     font-size: 15px;
     line-height: 25px;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
     padding: 10.97px 24px;
     outline: none;
     border: none;
+    font-weight: 700;
 }
-.btn-danger:hover{
+
+.btn-mute{
+    border: 1px solid #858585;
+    color: #858585;
+    background:none;
+}
+.btn-danger{
+    background: #D22238;
+    color: #FFFFFF;
+}
+.btn:hover{
     opacity: 0.85;
     cursor: pointer;
 }
-.btn-danger:active{
+.btn:active{
     opacity: 0.5;
 }
 
@@ -386,4 +395,179 @@ body{
     background: url("../img/solutions-second.png") no-repeat;
     background-size: contain;
     margin-top: auto;
+}
+
+
+/* Our Goal */
+
+.goal{
+    padding-top: 93px;
+    padding-bottom: 93px;
+}
+
+.goal__title{
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin: 13px 0;
+}
+
+.goal__description{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.goal__cards{
+    display: flex;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.goal__card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;  
+}
+
+.goal__card__title{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin: 24px 0;
+}
+
+.goal__card__desc{
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #858585;
+}
+.goal__card__btn{
+    margin-top: 43px;
+}
+
+
+.goal__card::before{
+    content: "";
+    width: 88px;
+    height: 89px;
+    border-radius: 10px;
+    
+}
+
+.goal__card:nth-child(1)::before{
+    background: url("../img/contact_center_icon.png") no-repeat;
+    background-color: #F6EFFA;
+}
+.goal__card:nth-child(2)::before{
+    background: url("../img/ecommerce_icon.png") no-repeat;
+    background-color: #FCEDEF;
+}
+.goal__card:nth-child(3)::before{
+    background: url("../img/Business_icon.png") no-repeat;
+    background-color: #EDFCFB;
+}
+
+.goal__card__btn{
+    display: flex;
+    align-items: center;
+}
+
+.goal__card__btn > svg{
+    margin-left: 10px;
+}
+
+
+
+/* Blogpost section styles */
+.blogpost{
+    padding-bottom: 121px;
+    padding-top: 59px;
+}
+
+.blogpost__title{
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.blogpost__description{
+    margin: auto;
+    width: 60%;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #3D3D3D;
+}
+.blogpost__items{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blogpost__item{
+    position: relative;
+    width: 30%;
+    padding: 29px;
+    background: linear-gradient(360deg, #000000 -9.6%, rgba(0, 0, 0, 0) 109.78%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.blogpost__item:hover{
+    background: linear-gradient(360deg, #F00000 -9.6%, rgba(240, 0, 0, 0) 217.8%);
+}
+
+.blogpost__img{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.blogpost__item{
+    height: 503.54px;
+}
+.middle{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.middle > .blogpost__item{
+    width: 100%;
+    height: 240px;
+}
+.blogpost__time{
+    margin-top: auto;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+.blogpost__time::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    margin-left: -6px;
+    background:url("../img/Time.png") no-repeat;
+    background-size: contain;
 }
